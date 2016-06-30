@@ -5,7 +5,7 @@ var upgrade = 1;
 function clicOnChicken() {
     score = score + upgrade;
     eggs = eggs + upgrade;
-    document.getElementById("affichage-score").innerHTML = score;
+    document.getElementById("affichage-score").innerHTML = eggs;
     document.getElementById("total-eggs").innerHTML = score;
     console.log(score);
 }
