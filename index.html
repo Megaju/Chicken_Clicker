@@ -6,17 +6,28 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <script src="js/game.js" type="text/javascript"></script>
 </head>
 
 <body>
     <!-- tableau de bord de la poule ! -->
     <div class="chicken-panel">
-
+       <h1>Chicken Clicker</h1>
+       
+        <div type="button" id="boutton" onclick="clicOnChicken()">
+            
+        </div>
+        
+        <h2>Eggs</h2>
+        <p id="affichage-score"></p>
+        
     </div>
 
     <!-- représentation graphique des améliorations -->
     <div class="graphics-panel">
-        
+        <div class="resume">
+            <p>Total Eggs: </p><p id="total-eggs">000</p>
+        </div>
     </div>
     
     <!-- tableau de bord des améliorations -->
