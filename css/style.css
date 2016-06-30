@@ -6,6 +6,7 @@ body {
     padding: 0;
     font-family: 'Slabo 27px', serif;
     color: #eee;
+    background-image: url(../images/bg.jpg);
 }
 
 h1 {
@@ -34,24 +35,38 @@ a:hover {
     width: 20%;
     height: 100vh;
     padding: 10px;
-    background-color: #684;
+}
+
+.chicken-panel {
+    margin-right: 20px;
+    background-image: url(../images/bg2.png);
+    background-size: contain;
+}
+.upgrade-panel {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 150px;
+    padding-right: 0;
+    margin-left: 20px;
+    background-image: url(../images/bg2_1.png);
+    background-size: contain;
 }
 
 .center-panel {
     width: 60%;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .graphics-panel {
     height: 100vh;
-    background-color: #342;
 }
 
 .resume {
     display: flex;
     height: 80px;
     padding: 10px;
-    background-color: #120;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -73,19 +88,22 @@ a:hover {
 #boutton {
     width: 200px;
     height: 291px;
-    margin: 0 auto;
+    margin: 100px auto;
     background-size: 100%;
-    background-image: url(../images/poule.png);
     cursor: pointer;
+    background-image: url(../images/poule.png);
 }
 
 #multiplicateur {
+    
     display: block;
-    width: 100%;
-    height: 50px;
+    width: 300px;
+    height: 64px;
+    font-size: 24px;
     text-align: center;
-    line-height: 50px;
-    background-color: #555;
-    color: #eee;
+    line-height: 64px;
+    background-image: url(../images/bg-upgrade.jpg);
+    background-size: contain;
+    color: #333;
     cursor: pointer;
 }
