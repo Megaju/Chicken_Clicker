@@ -9,3 +9,13 @@ function clicOnChicken() {
     document.getElementById("total-eggs").innerHTML = score;
     console.log(score);
 }
+
+function buy() {
+    if (eggs >= 50) {
+        eggs = eggs - 50;
+        upgrade = upgrade + 1;
+    } else {
+        alert("nop !");
+    }
+        
+}
