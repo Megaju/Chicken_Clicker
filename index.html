@@ -13,9 +13,9 @@
         <div class="chicken">
             <h1>Chicken Clicker</h1>
             <!-- bouton poulet pour gagner des oeufs!!! -->
-            <div type="button" class="poulet" onclick="clicOnChicken"></div>
+            <div type="button" class="poulet" onclick="clicOnChicken()"></div>
             <!-- bouton multiplicateur -->
-            <button onclick="buy">multiplicateur</button>
+            <button onclick="buy()">multiplicateur</button>
             <div>
                <p>Eggs</p>
                 <p id="affichage-score">0</p>
@@ -23,7 +23,8 @@
         </div>
     </div>
     <div class="bloc section2">
-        <h2>Score</h2>
+        <h2>Score total</h2>
+        <p id="total-eggs">0</p>
     </div>
     <div class="bloc section3">
         <h2>Multiplicateur</h2>
