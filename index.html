@@ -3,29 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>Chicken Cliker</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     <script src="js/game.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <div id="section1">
-        <div id="chicken">
-            <h1>Chicken</h1>
-            <p>image chicken</p>
-            <button>multiplicateur</button>
+    <div class="bloc section1">
+        <div class="chicken">
+            <h1>Chicken Clicker</h1>
+            <!-- bouton poulet pour gagner des oeufs!!! -->
+            <div type="button" class="poulet" onclick="clicOnChicken"></div>
+            <!-- bouton multiplicateur -->
+            <button onclick="buy">multiplicateur</button>
             <div>
-                <p>Affichage</p>
+               <p>Eggs</p>
+                <p id="affichage-score">0</p>
             </div>
         </div>
     </div>
-    <div id="section2">
-        <h1>Score</h1>
+    <div class="bloc section2">
+        <h2>Score</h2>
     </div>
-    <div id="section3">
-        <h1>Multiplicateur</h1>
-        <div id="Bonus">
-            <h2>Amélioration</h2>
+    <div class="bloc section3">
+        <h2>Multiplicateur</h2>
+        <div class="Bonus">
+            <h3>Amélioration</h3>
             <p>Curseur</p>
             <p>Fermier</p>
             <p>Poulailler</p>
