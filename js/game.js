@@ -1,6 +1,7 @@
 var score = 0;
 var eggs = 0;
 var upgrade = 1;
+var prix = 50;
 
 function clicOnChicken() {
     score = score + upgrade;
@@ -11,13 +12,14 @@ function clicOnChicken() {
 }
 
 function buy() {
-    if (eggs >= 50) {
-        eggs = eggs - 50;
+    if (eggs >= prix) {
+        eggs = eggs - prix;
         document.getElementById("affichage-score").innerHTML = eggs;        
         upgrade = upgrade + 1;
         document.getElementById("nbr-multi").innerHTML = upgrade;
+        prix = prix * 2;
+        document.getElementById("price").innerHTML = prix;
     } else {
         alert("nop !");
     }
-        
 }
