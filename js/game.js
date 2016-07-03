@@ -13,8 +13,9 @@ function clicOnChicken() {
 function buy() {
     if (eggs >= 50) {
         eggs = eggs - 50;
-        document.getElementById("affichage-score").innerHTML = eggs;
+        document.getElementById("affichage-score").innerHTML = eggs;        
         upgrade = upgrade + 1;
+        document.getElementById("nbr-multi").innerHTML = upgrade;
     } else {
         alert("nop !");
     }
