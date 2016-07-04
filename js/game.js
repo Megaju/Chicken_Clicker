@@ -2,6 +2,7 @@ var score = 0;
 var eggs = 0;
 var upgrade = 1;
 var prix = 50;
+//var autoclicker = 200;
 
 function clicOnChicken() {
     score = score + upgrade;
@@ -19,6 +20,7 @@ function buy() {
         document.getElementById("nbr-multi").innerHTML = upgrade;
         prix = prix * 2;
         document.getElementById("price").innerHTML = prix;
+ //       autoclicker = setInterval(clicOnChicken, 1000);
     } else {
         alert("nop !");
     }
